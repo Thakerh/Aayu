@@ -215,12 +215,12 @@ def respond(recognized):
             mixer.music.play()
             time.sleep(2.5)
             exit()
-        if recognized == "who is the genius":
+        """if recognized == "who made you":
             sr_speech("Harshil Thaker")
             mixer.init()   
             mixer.music.load('/Users/harshil/downloads/Scam.mp3')
             mixer.music.play()
-            time.sleep(30)
+            time.sleep(30)"""
             
     
     except AttributeError:
@@ -228,7 +228,7 @@ def respond(recognized):
 
 
 listen = False
-WAKE = "Friday" 
+WAKE = "wake up" 
 
 while True:
    print('Listening..')
@@ -242,7 +242,7 @@ while True:
       listen = False
    
    if listen == True:
-      sr_speech('how can i help you harshil')
+      sr_speech('how can i help you ')
       recognized = record_audio()
       print(recognized)
       
